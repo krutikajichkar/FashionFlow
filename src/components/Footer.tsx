@@ -5,9 +5,9 @@ import React from "react";
 import Logo from "./Logo";
 const Footer = () => {
   return (
-    <div className="bg-[#1b2834] text-white p-4 sm:p-8 mt-8 sm:mt-0">
-    <div className='flex items-center flex-col sm:flex-row md:flex-col md:p-4  '>
-      <div className="sm:w-[50%] md:w-full w-full flex flex-col gap-y-4">
+    <div className="bg-[#1b2834] text-white p-4 lg:p-8 mt-8 lg:mt-0">
+    <div className='flex items-center flex-col lg:flex-row md:flex-col md:p-4  '>
+      <div className="lg:w-[50%] md:w-full w-full flex flex-col gap-y-4">
         <Logo />
         <p className="">
           Style Flows Here: Your Ultimate Fashion Destination! Explore
@@ -19,8 +19,8 @@ const Footer = () => {
             <span>FashionFlow@Gmail.com</span>
         </div>
       </div>
-      <div className="flex justify-evenly w-full flex-col sm:flex-row md:w-full md:mt-8 sm:mt-0  sm:w-[50%]">
-      <div className="mt-6 sm:mt-0">
+      <div className="flex justify-evenly w-full flex-col md:flex-row lg:flex-row md:w-full md:mt-8 lg:mt-0  lg:w-[50%]">
+      <div className="mt-6 md:mt-0 lg:mt-0">
         <span className="font-semibold text-xl">Product</span>
         <ul className="my-2">
           <li className="py-1">Landing Pages</li>
@@ -31,7 +31,7 @@ const Footer = () => {
         </ul>
       </div>
       <div>
-        <span className="font-semibold text-xl">Comapny</span>
+        <span className="font-semibold text-xl">Company</span>
         <ul className="my-2">
           <li className="py-1">About</li>
           <li className="py-1">Privacy Policy</li>
@@ -52,11 +52,11 @@ const Footer = () => {
       </div>
       </div>
     </div>
-     <div className="flex flex-col sm:flex-row sm:justify-between mt-8">
+     <div className="flex flex-col md:flex-row md:justify-between items-center lg:flex-row lg:justify-between mt-8">
      <div>
      © 2020 All Right Reserved 
      </div>
-     <div className="mt-6 sm:mt-0">
+     <div className="mt-6 lg:mt-0">
          <ul className="flex gap-x-4 text-3xl">
              <li><FaTwitter/></li>
              <li><AiFillInstagram/></li>
