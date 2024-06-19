@@ -19,8 +19,8 @@ export default function Home() {
       {show && <DiscountMessage setShow={setShow} show={show} />}
       <Header />
       <section className="bg-[#faf9f9] flex justify-between items-center">
-        <div className="sm:w-[60%] w-full sm:text-left text-center px-6 sm:px-24 py-14 ">
-          <div className="sm:text-5xl text-3xl font-bold tracking-wider">
+        <div className="sm:w-[60%] md:w-full w-full sm:text-left text-center px-6 md:px-14 sm:px-24 py-14 ">
+          <div className="sm:text-5xl text-3xl font-bold">
             Step into Fashion at Your Ultimate Style Destination!
           </div>
           <p className="py-6">
@@ -28,9 +28,9 @@ export default function Home() {
             Dive into Your Ultimate Style Destination and Elevate Your Wardrobe
             Today!
           </p>
-          <div className="sm:w-[30%] w-full"><Button text="Shop Now" /></div>
+          <div className="sm:w-[30%] md:w-full w-full"><Button text="Shop Now" /></div>
         </div>
-        <div className="px-20 sm:block hidden">
+        <div className="px-20 sm:block  hidden md:hidden">
           <Image src={Homepage_img} alt="Image" />
         </div>
       </section>
@@ -71,7 +71,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="sm:p-20 flex sm:flex-row flex-col justify-evenly gap-y-10">
+      <section className="sm:p-20 md:p-4 flex sm:flex-row flex-col justify-evenly gap-y-10">
         <div className="sm:w-[25%] w-full px-6 sm:px-0 relative cursor-pointer">
           <Image
             src={women_category}

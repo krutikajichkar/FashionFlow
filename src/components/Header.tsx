@@ -5,7 +5,8 @@ import Logo from './Logo'
 
 const Header = () => {
   return (
-    <div className='flex justify-between px-10 shadow-sm border-b-2 shadow-black py-2 items-center sticky top-0 left-0 right-0 bg-white z-10'>
+    <>
+    <div className='flex justify-between px-10 shadow-sm border-b-2 shadow-black py-2 items-center sticky top-0 left-0 right-0 bg-white z-10 hidden sm:block'>
         <div>
             <Logo/>
         </div>
@@ -28,6 +29,8 @@ const Header = () => {
             </ul>
         </div>
     </div>
+   
+    </>
   )
 }
 

@@ -1,10 +1,13 @@
+import { FaTwitter , FaLinkedin } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
 import { MdOutlineEmail } from "react-icons/md";
 import React from "react";
 import Logo from "./Logo";
 const Footer = () => {
   return (
-    <div className='flex bg-[#1b2834] text-white p-6 items-center '>
-      <div className="w-[50%] flex flex-col gap-y-4">
+    <div className="bg-[#1b2834] text-white p-4 sm:p-8 mt-8 sm:mt-0">
+    <div className='flex items-center flex-col sm:flex-row md:flex-col md:p-4  '>
+      <div className="sm:w-[50%] md:w-full w-full flex flex-col gap-y-4">
         <Logo />
         <p className="">
           Style Flows Here: Your Ultimate Fashion Destination! Explore
@@ -16,8 +19,8 @@ const Footer = () => {
             <span>FashionFlow@Gmail.com</span>
         </div>
       </div>
-      <div className="flex justify-evenly w-[50%]">
-      <div>
+      <div className="flex justify-evenly w-full flex-col sm:flex-row md:w-full md:mt-8 sm:mt-0  sm:w-[50%]">
+      <div className="mt-6 sm:mt-0">
         <span className="font-semibold text-xl">Product</span>
         <ul className="my-2">
           <li className="py-1">Landing Pages</li>
@@ -49,6 +52,19 @@ const Footer = () => {
       </div>
       </div>
     </div>
+     <div className="flex flex-col sm:flex-row sm:justify-between mt-8">
+     <div>
+     © 2020 All Right Reserved 
+     </div>
+     <div className="mt-6 sm:mt-0">
+         <ul className="flex gap-x-4 text-3xl">
+             <li><FaTwitter/></li>
+             <li><AiFillInstagram/></li>
+             <li><FaLinkedin/></li>
+         </ul>
+     </div>
+ </div>
+ </div>
   );
 };
 
