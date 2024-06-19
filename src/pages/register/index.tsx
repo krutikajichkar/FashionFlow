@@ -31,6 +31,10 @@ const Register = () => {
           <label className="text-lg font-semibold">Phone Number</label>
           <Input type="text" placeholder="Phone Number" />
           </div>
+          <div className="flex gap-x-1">
+            <div className="w-8"><Input type='checkbox' placeholder=''/></div>
+            <span>By signing up I agree to the Terms & Condition and Privacy Policy</span>
+          </div>
           <Button text="Sign Up" />
         </form>
         <div className="text-center">

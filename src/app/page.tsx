@@ -3,6 +3,7 @@ import { BiSolidCube } from "react-icons/bi";
 import Button from "@/components/Button";
 import DiscountMessage from "@/components/DiscountMessage";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import Image from "next/image";
 import Homepage_img from "../../public/Homepage_img.png";
 import kids_category from "../../public/kids_category.png";
@@ -17,7 +18,7 @@ export default function Home() {
     <div>
       {show && <DiscountMessage setShow={setShow} show={show} />}
       <Header />
-      <section className="bg-[#f3f0f0] flex justify-between items-center">
+      <section className="bg-[#faf9f9] flex justify-between items-center">
         <div className="sm:w-[60%] w-full sm:text-left text-center px-6 sm:px-24 py-14 ">
           <div className="sm:text-5xl text-3xl font-bold tracking-wider">
             Step into Fashion at Your Ultimate Style Destination!
@@ -35,7 +36,7 @@ export default function Home() {
       </section>
 
       <section className="py-20 sm:flex-row flex flex-col items-center sm:justify-evenly gap-y-10">
-        <div className="flex items-center gap-x-2 w-full px-10 sm:px-0 sm:w-[20%]">
+        <div className="flex items-center gap-x-2 w-full px-10 sm:px-0 sm:w-[25%]">
           <div>
             <BiSolidCube className="text-6xl text-blue-950 " />
           </div>
@@ -46,7 +47,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="flex items-center gap-x-2 w-full px-10 sm:px-0 sm:w-[20%]">
+        <div className="flex items-center gap-x-2 w-full px-10 sm:px-0 sm:w-[25%]">
           <div>
             <BiSolidCube className="text-6xl text-blue-950 " />
           </div>
@@ -57,7 +58,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="flex items-center gap-x-2 w-full px-10 sm:px-0 sm:w-[20%]">
+        <div className="flex items-center gap-x-2 w-full px-10 sm:px-0 sm:w-[25%]">
           <div>
             <BiSolidCube className="text-6xl text-blue-950 " />
           </div>
@@ -111,6 +112,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 }
