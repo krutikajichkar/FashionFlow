@@ -3,14 +3,15 @@ import "../app/globals.css";
 
 interface inputProps {
   type: string;
-  placeholder: string;
+  placeholder?: string;
+  color?: string;
 }
-const Input = ({ type, placeholder }: inputProps) => {
+const Input = ({ type, placeholder , color}: inputProps) => {
   return (
     <input
       type={type}
       placeholder={placeholder}
-      className="border-2 border-gray-400 px-4 py-2 mt-2 rounded-md w-full"
+    className="border-2 border-gray-400 px-4 py-2 mt-2 rounded-md w-full"
     />
   );
 };
