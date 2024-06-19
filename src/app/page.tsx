@@ -8,7 +8,7 @@ import Image from "next/image";
 import Homepage_img from "../../public/Homepage_img.png";
 import kids_category from "../../public/kids_category.png";
 import mens_category from "../../public/mens_category.jpg";
-import women_category from "../../public/women_category.png";
+import women_Category from "../../public/women_Category.png";
 import { useState } from "react";
 import "./globals.css";
 
@@ -74,7 +74,7 @@ export default function Home() {
       <section className="sm:p-20 md:p-4 lg:p-20 flex sm:flex-row flex-col justify-evenly gap-y-10">
         <div className="sm:w-[25%] w-full px-6 sm:px-0 relative cursor-pointer">
           <Image
-            src={women_category}
+            src={women_Category}
             alt="women Category Image"
             className=" relative w-full h-[400px]"
           />
