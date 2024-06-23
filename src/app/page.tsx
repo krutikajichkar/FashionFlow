@@ -4,20 +4,22 @@ import Button from "@/components/Button";
 import DiscountMessage from "@/components/DiscountMessage";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BestSellingProducts from "@/components/BestSellingProducts";
 import Image from "next/image";
 import Homepage_img from "../../public/Homepage_img.png";
 import kids_category from "../../public/kids_category.png";
 import mens_category from "../../public/mens_category.jpg";
 import women_Category from "../../public/women_Category.png";
 import { useState } from "react";
+import Layout from "@/components/Layout";
 import "./globals.css";
 
 export default function Home() {
   const [show, setShow] = useState<boolean>(true);
   return (
-    <div>
+    <>
       {show && <DiscountMessage setShow={setShow} show={show} />}
-      <Header />
+      
       <section className="bg-[#faf9f9] flex justify-between items-center">
         <div className="md:w-full lg:w-[60%] w-full sm:text-left text-center px-6 md:px-14 lg:px-24 py-14 ">
           <div className="sm:text-5xl text-3xl font-bold">
@@ -112,7 +114,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Footer/>
-    </div>
+
+      <BestSellingProducts/>
+      
+    </>
   );
 }

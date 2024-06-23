@@ -2,15 +2,14 @@ import React from "react";
 import Header from "../../components/Header";
 import Input from "../../components/Input";
 import Footer from "../../components/Footer";
-import "../../app/globals.css";
 import CartCard from "@/components/CartCard";
 import PriceDetails from "@/components/PriceDetails";
 import RelatedProductsCard from "@/components/RelatedProductsCard";
-
+import Layout from "@/components/Layout";
 const index = () => {
   return (
-    <div className="">
-      <Header />
+    <Layout >
+      
       {/* <div>BreadScrumbing</div> */}
       <div className="lg:px-20 lg:py-10 px-4 flex flex-col lg:flex-row   ">
         <div className=" px-2 md:px-4 lg:px-4 lg:w-[60%] w-full lg:border-r-2">
@@ -48,8 +47,8 @@ const index = () => {
         <RelatedProductsCard/>
         </div>
       </div>
-      <Footer />
-    </div>
+      
+    </Layout>
   );
 };
 

@@ -3,7 +3,7 @@ import Button from './Button'
 
 const PriceDetails = () => {
   return (
-    <div>
+    <div className='sticky right-0 top-0'>
         <h1 className='text-xl font-bold'>PRICE DETAILS (2 ITEMS)</h1>
         <div className='flex justify-between my-4'>
             <span className='text-gray-600'>Total MRP</span>
