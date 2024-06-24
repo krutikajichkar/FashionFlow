@@ -1,9 +1,7 @@
 "use client";
 import { BiSolidCube } from "react-icons/bi";
-import Button from "@/components/Button";
+import {Button} from "@/components/Button";
 import DiscountMessage from "@/components/DiscountMessage";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import BestSellingProducts from "@/components/BestSellingProducts";
 import Image from "next/image";
 import Homepage_img from "../../public/Homepage_img.png";
