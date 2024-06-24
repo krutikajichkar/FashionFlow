@@ -4,7 +4,7 @@ import Image from "next/image";
 import Signin_girl_img from "../../../public/Signin_girl_img.png";
 import AccountSidebar from "@/components/AccountSidebar";
 import Input from "@/components/Input";
-import Button from "@/components/Button";
+import {Button} from "@/components/Button";
 const index = () => {
   return (
     <Layout>

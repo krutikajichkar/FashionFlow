@@ -1,15 +1,14 @@
 import React from "react";
-import Header from "../../components/Header";
+
 import Input from "../../components/Input";
-import Footer from "../../components/Footer";
+
 import CartCard from "@/components/CartCard";
 import PriceDetails from "@/components/PriceDetails";
 import RelatedProductsCard from "@/components/RelatedProductsCard";
 import Layout from "@/components/Layout";
 const index = () => {
   return (
-    <Layout >
-      
+    <Layout>
       {/* <div>BreadScrumbing</div> */}
       <div className="lg:px-20 lg:py-10 px-4 flex flex-col lg:flex-row   ">
         <div className=" px-2 md:px-4 lg:px-4 lg:w-[60%] w-full lg:border-r-2">
@@ -20,7 +19,7 @@ const index = () => {
               </span>
               <span>4/4 ITEMS SELECTED</span>
             </div>
-            <div >
+            <div>
               <span>REMOVE &nbsp; &nbsp;| &nbsp; &nbsp;</span>
               <span>MOVE TO WISHLIST</span>
             </div>
@@ -34,20 +33,19 @@ const index = () => {
           </div>
         </div>
         <div className="lg:w-[40%] mt-4 lg:mt-0 w-full px-6">
-        <PriceDetails />
-      </div>
+          <PriceDetails />
+        </div>
       </div>
       <div className="lg:px-20 lg:py-10 px-4 py-3 mt-6 lg:mt-0">
         <span className="text-xl font-semibold">Related Product</span>
         <h1 className="text-2xl font-bold my-4">Discover Related Products</h1>
 
         <div className="my-10 flex flex-wrap lg:flex-row flex-col gap-y-8 lg:gap-y-8 justify-evenly">
-        <RelatedProductsCard/>
-        <RelatedProductsCard/>
-        <RelatedProductsCard/>
+          <RelatedProductsCard />
+          <RelatedProductsCard />
+          <RelatedProductsCard />
         </div>
       </div>
-      
     </Layout>
   );
 };

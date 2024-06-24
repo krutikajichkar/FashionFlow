@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Input from "../../components/Input";
-import Button from "../../components/Button";
+import {Button} from "../../components/Button";
 import Logo from "../../components/Logo";
 import signup_img from "../../../public/signup_img.jpg";
 import "../../app/globals.css";
