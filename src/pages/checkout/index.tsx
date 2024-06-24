@@ -45,9 +45,9 @@ const index = () => {
                 Payment Option
               </h1>
               <div>
-                {cardData?.map((e) => {
+                {cardData?.map((e , i) => {
                   return (
-                    <div className="flex items-center justify-start gap-2 px-10 py-3 border rounded-md my-4">
+                    <div key={i+1} className="flex items-center justify-start gap-2 px-10 py-3 border rounded-md my-4">
                       <span>
                         <Input type="radio" />
                       </span>
