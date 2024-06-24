@@ -45,20 +45,20 @@ const index = () => {
                 Payment Option
               </h1>
               <div>
-                { cardData?.map(e => {
-                    return (
-                      <div className="flex items-center justify-start gap-2 px-10 py-3 border rounded-md my-4">
-                        <span>
-                          <Input type="radio" />
-                        </span>
-                        <span>
-                          <Image src={e.img} alt={e.alt} className="w-[30px]" />
-                        </span>
-                        <span>{e.name}</span>
-                      </div>
-                    );
-                  })}
-                </div>
+                {cardData?.map((e) => {
+                  return (
+                    <div className="flex items-center justify-start gap-2 px-10 py-3 border rounded-md my-4">
+                      <span>
+                        <Input type="radio" />
+                      </span>
+                      <span>
+                        <Image src={e.img} alt={e.alt} className="w-[30px]" />
+                      </span>
+                      <span>{e.name}</span>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
             <div>
               <div>
@@ -120,27 +120,31 @@ const index = () => {
                     </div>
                     <form className="my-6  lg:px-12 px-2">
                       <div className="my-3 flex flex-col gap-y-2">
-                        <label className="text-lg font-bold">
-                          Card Holder Name
-                        </label>
-                        <Input type="text" placeholder="Enter Your Full Name" />
+                        <Input
+                          type="text"
+                          placeholder="Enter Your Full Name"
+                          label="Card Holder Name"
+                        />
                       </div>
 
                       <div className="my-3 flex flex-col gap-y-2">
-                        <label className="text-lg font-bold">Card Number</label>
-                        <Input type="text" placeholder="XXXX XXXX XXXX XX34" />
+                        <Input
+                          type="text"
+                          placeholder="XXXX XXXX XXXX XX34"
+                          label="Card Number"
+                        />
                       </div>
 
                       <div className="flex lg:flex-row flex-col gap-4">
                         <div className="my-3 flex flex-col gap-y-2 lg:w-[50%] w-full">
-                          <label className="text-lg font-bold">
-                            Expiry Date
-                          </label>
-                          <Input type="text" placeholder="00/00/00" />
+                          <Input
+                            type="text"
+                            placeholder="00/00/00"
+                            label="Expiry Date"
+                          />
                         </div>
                         <div className="my-3 flex flex-col gap-y-2 lg:w-[50%] w-full">
-                          <label className="text-lg font-bold">CVV</label>
-                          <Input type="text" placeholder="XXX" />
+                          <Input type="text" placeholder="XXX" label="CVV" />
                         </div>
                       </div>
                       <Button text="ADD CARD" />

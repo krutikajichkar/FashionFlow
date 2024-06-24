@@ -5,14 +5,18 @@ interface inputProps {
   type: string;
   placeholder?: string;
   color?: string;
+  label?: string;
 }
-const Input = ({ type, placeholder , color}: inputProps) => {
+const Input = ({ type, placeholder, color , label }: inputProps) => {
   return (
-    <input
-      type={type}
-      placeholder={placeholder}
-    className="border-2 border-gray-400 px-4 py-2 mt-2 rounded-md w-full"
-    />
+    <>
+      <label className="text-lg font-semibold">{label}</label>
+      <input
+        type={type}
+        placeholder={placeholder}
+        className="border-2 border-gray-400 px-4 py-2 mt-2 rounded-md w-full"
+      />
+    </>
   );
 };
 

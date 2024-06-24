@@ -15,27 +15,27 @@ const Register = () => {
         <form>
           <div className="flex w-full gap-x-4">
           <div className="mb-6">
-            <label className="text-lg font-semibold">First Name</label>
-            <Input type="text" placeholder="First Name" />
+            
+            <Input type="text" placeholder="First Name" label="First Name" />
           </div>
           <div className="mb-6">
-            <label className="text-lg font-semibold">Last Name</label>
-            <Input type="text" placeholder="Last Name" />
+            
+            <Input type="text" placeholder="Last Name" label="Last Name" />
           </div>
           </div>
           <div className="mb-6">
-          <label className="text-lg font-semibold">Email Address</label>
-          <Input type="text" placeholder="Email Address" />
+          
+          <Input type="text" placeholder="Email Address" label="Email Address"/>
           </div>
           <div className="mb-6">
-          <label className="text-lg font-semibold">Phone Number</label>
-          <Input type="text" placeholder="Phone Number" />
+          
+          <Input type="tel" placeholder="Phone Number" label="Phone Number" />
           </div>
           <div className="flex gap-x-1">
             <div className="w-8"><Input type='checkbox' placeholder=''/></div>
             <span>By signing up I agree to the Terms & Condition and Privacy Policy</span>
           </div>
-          <Button text="Sign Up" />
+          <Button text="SIGN UP" />
         </form>
         <div className="text-center">
           <span>

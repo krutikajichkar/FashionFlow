@@ -14,12 +14,11 @@ const Login = () => {
         <p className="text-3xl font-semibold my-6">Sign in to your account</p>
         <form>
           <div className="mb-6">
-            <label className="text-lg font-semibold">Email Address</label>
-            <Input type="text" placeholder="Email Address" />
+            <Input type="text" placeholder="Email Address" label="Email Address" />
           </div>
           <div className="mb-6">
-            <label className="text-lg font-semibold">Password</label>
-            <Input type="password" placeholder="Password" />
+            
+            <Input type="password" placeholder="Password" label="Password"/>
           </div>
           <div className="text-right">
             <span className="text-lg font-semibold">Forgot Password ?</span>
