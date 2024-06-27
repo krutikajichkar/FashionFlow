@@ -155,7 +155,7 @@ const index = () => {
             </div>
           </div>
           <div className=" w-full lg:w-[40%]">
-            <PriceDetails />
+            <PriceDetails btnText="CHECKOUT" />
           </div>
         </div>
       </div>

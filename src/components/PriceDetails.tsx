@@ -1,7 +1,7 @@
 import React from 'react'
 import {Button} from './Button'
 
-const PriceDetails = () => {
+const PriceDetails = ({btnText} : {btnText : string}) => {
   return (
     <div className='sticky right-0 top-0'>
         <h1 className='text-xl font-bold'>PRICE DETAILS (2 ITEMS)</h1>
@@ -27,7 +27,7 @@ const PriceDetails = () => {
             <span >Total Amount</span>
             <span >$992</span>
         </div>
-        <Button text='PLACE ORDER'/>
+        <Button text={btnText}/>
     </div>
   )
 }

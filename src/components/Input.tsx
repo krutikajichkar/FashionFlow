@@ -15,6 +15,7 @@ const Input = ({ type, placeholder, color , label }: inputProps) => {
         type={type}
         placeholder={placeholder}
         className="border-2 border-gray-400 px-4 py-2 mt-2 rounded-md w-full"
+        required
       />
     </>
   );

@@ -33,7 +33,7 @@ const index = () => {
           </div>
         </div>
         <div className="lg:w-[40%] mt-4 lg:mt-0 w-full px-6">
-          <PriceDetails />
+          <PriceDetails btnText="PLACE ORDER" />
         </div>
       </div>
       <div className="lg:px-20 lg:py-10 px-4 py-3 mt-6 lg:mt-0">
