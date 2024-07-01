@@ -12,7 +12,7 @@ const index = () => {
           <div className="w-[40%]">
             <Filters />
           </div>
-          <div className="flex gap-x-10 flex-wrap justify-center">
+          <div className="flex gap-10 flex-wrap justify-center">
             {
                 Array(6).fill(undefined).map((prod , i) => {
                     return(
